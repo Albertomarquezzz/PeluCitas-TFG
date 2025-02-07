@@ -50,7 +50,7 @@ export class RegisterComponent {
 
 			if (data) {
 				// Mostrar mensaje de éxito
-        this.messageService.add({ severity: 'success', summary: 'Registro exitoso', detail: 'Por favor, inicia sesión.', life: 3000 });
+        this.messageService.add({ severity: 'success', summary: 'Registro exitoso', detail: 'Por favor, verifica tu correo electrónico. Te hemos enviado un correo electrónico.', life: 3000 });
         // Esperar 6 segundos antes de redirigir al usuario a la página de inicio de sesión
         setTimeout(() => {
           this.router.navigate(['/login']);
