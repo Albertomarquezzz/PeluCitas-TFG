@@ -1,0 +1,17 @@
+.navbar-brand svg {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out;
+}
+
+.navbar-brand svg:hover {
+    transform: scale(1.1);
+    fill: var(--bs-primary);
+}
+
+.navbar {
+    background-color: var(--bs-body-bg) !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+    padding: 10px 0;
+}
