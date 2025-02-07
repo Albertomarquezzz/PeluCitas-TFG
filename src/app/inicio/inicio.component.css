@@ -7,16 +7,18 @@ img.image-container {
   filter: blur(5px);
 }
 
-  /* Estilos para pantallas móviles */
-  @media only screen and (max-width: 600px) {
-    .email::before {
-      content: "albprogram2002\A"; /* \A es el código para un salto de línea en CSS */
-      white-space: pre; /* Mantiene el salto de línea */
-    }
-    .email {
-      display: inline-block; /* Asegura que el salto de línea funcione correctamente */
-    }
+.email-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) { /* Ajusta el tamaño según lo necesites */
+  .email-desktop {
+    display: none;
   }
+  .email-mobile {
+    display: inline;
+  }
+}
 
 .overlay {
   position: absolute;
