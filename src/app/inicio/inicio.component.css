@@ -67,7 +67,7 @@
   transform: translateY(1px);
 }
 
-/* Media queries para dispositivos móviles */
+/*dispositivos móviles */
 @media (max-width: 768px) {
   .hero-container {
     margin: 0;
@@ -96,7 +96,7 @@
   display: none;
 }
 
-@media (max-width: 768px) { /* Ajusta el tamaño según lo necesites */
+@media (max-width: 768px) { 
   .email-desktop {
     display: none;
   }
@@ -136,16 +136,16 @@
   justify-content: space-between;
   align-items: center;
   margin: 15px 0;
-  font-size: 1rem; /* Tamaño ajustado */
+  font-size: 1rem; 
 }
 
 .servicio span {
-  font-size: 1rem; /* Tamaño ajustado */
-  color: #d4af37; /* Color dorado */
+  font-size: 1rem; 
+  color: #d4af37; 
 }
 
 .servicio:hover {
-  color: #d4af37; /* Hover en dorado */
+  color: #d4af37; 
   cursor: pointer;
   transition: color 0.3s ease;
 }
@@ -156,7 +156,7 @@
   padding: 50px 20px;
   border-radius: 10px;
   margin: 20px auto;
-  max-width: 1000px; /* Ajusta el ancho máximo */
+  max-width: 1000px; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,9 +164,9 @@
 
 .horarios-row {
   display: flex;
-  gap: 20px; /* Espaciado entre columnas */
+  gap: 20px; 
   justify-content: center;
-  flex-wrap: wrap; /* Para que sea responsivo */
+  flex-wrap: wrap; 
 }
 
 .horarios-content {
@@ -174,7 +174,7 @@
   color: #fff;
   border-radius: 10px;
   padding: 20px;
-  width: 300px; /* Todos tendrán el mismo ancho */
+  width: 300px; 
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
@@ -207,24 +207,20 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsivo para pantallas pequeñas */
+/*pantallas pequeñas */
 @media screen and (max-width: 768px) {
-  /* Ajustar la altura de la imagen en pantallas pequeñas */
   img.image-container {
     height: 500px;
   }
 
-  /* Reducir el tamaño del título en la superposición */
   .overlay h1 {
     font-size: 30px;
   }
 
-  /* Reducir tamaño del título de categoría */
   .categoria h2 {
     font-size: 18px;
   }
 
-  /* Hacer los servicios en columna para pantallas pequeñas */
   .servicio {
     flex-direction: column;
     align-items: flex-start;
@@ -234,34 +230,31 @@
     align-self: flex-end;
   }
 
-  /* Responsivo para la sección de horarios y contacto */
   .horarios-container {
-    padding: 30px 10px; /* Reducir padding */
+    padding: 30px 10px; 
   }
 
   .horarios-row {
-    flex-direction: column; /* Cambiar a columna para pantallas pequeñas */
+    flex-direction: column; 
     align-items: center;
-    gap: 10px; /* Reducir espacio entre los elementos */
+    gap: 10px; 
   }
 
   .horarios-content {
-    width: 100%; /* Hacer cada item de contacto al 100% del contenedor */
-    max-width: 350px; /* Limitar el ancho máximo */
+    width: 100%; 
+    max-width: 350px; 
   }
 
-  /* Ajustar el tamaño de los botones */
   .btn-horarios {
     font-size: 14px;
     padding: 8px 20px;
   }
 
-  /* Ajustar tamaño del ícono */
   .icono-horario img {
     width: 40px;
   }
 
   .horarios-content h2 {
-    font-size: 18px; /* Reducir tamaño de texto */
+    font-size: 18px; 
   }
 }
