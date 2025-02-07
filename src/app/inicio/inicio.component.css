@@ -123,11 +123,10 @@
   text-transform: uppercase;
 }
 
-/* Servicios con fondo blanco */
 .categoria h2 {
   font-size: 1.4rem;
   margin-bottom: 20px;
-  border-bottom: 2px solid #d4af37; /* Línea dorada en lugar de blanca */
+  border-bottom: 2px solid #d4af37;
   padding-bottom: 8px;
 }
 
@@ -150,7 +149,6 @@
   transition: color 0.3s ease;
 }
 
-/* Estilos generales para la sección de horarios y contacto */
 .horarios-container {
   text-align: center;
   padding: 50px 20px;
