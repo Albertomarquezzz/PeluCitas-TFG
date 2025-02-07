@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+<div class="login-container">
+	<div class="d-flex flex-column gap-4 bg-body-secondary p-4 rounded shadow">
+		<h2>Iniciar Sesión</h2>
+		<form (ngSubmit)="onSubmit($event)">
+			<div class="d-flex flex-column gap-2">
+				<input type="email" class="form-control form-control-lg" id="email" name="email" [(ngModel)]="email" placeholder="Correo electrónico" required />
+				<input type="password" class="form-control form-control-lg" id="password" name="password" [(ngModel)]="password" placeholder="Contraseña" required />
+				<div class="error-message" *ngIf="errorMessage">
+					{{ errorMessage }}
+				</div>
+				<button type="submit" class="btn btn-warning btn-lg" [disabled]="loading">
+					{{ loading ? 'Cargando...' : 'Entrar' }}
+				</button>
+			</div>
+		</form>
+		<div class="signup-text">
+			<p>¿No tienes una cuenta? <a routerLink="/crear-cuenta" routerLinkActive="active" ariaCurrentWhenActive="page">Haz clic aquí para crearla</a></p>
+		</div>
+	</div>
+</div>

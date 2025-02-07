@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<p-toast position="top-right"></p-toast>
+<div class="login-container">
+	<div class="d-flex flex-column gap-4 bg-body-secondary p-4 rounded shadow">
+		<h2>Registrar Cuenta</h2>
+		<form (ngSubmit)="onSubmit($event)">
+			<div class="d-flex flex-column gap-2">
+				<input type="email" class="form-control form-control-lg" id="email" name="email" [(ngModel)]="email" placeholder="Correo electrónico" required />
+				<input type="password" class="form-control form-control-lg" id="password" name="password" [(ngModel)]="password" placeholder="Contraseña" required />
+				<input type="password" class="form-control form-control-lg" id="confirmPassword" name="confirmPassword" [(ngModel)]="confirmPassword" placeholder="Repetir Contraseña" required />
+				<div class="error-message" *ngIf="errorMessage">
+					{{ errorMessage }}
+				</div>
+				<button type="submit" class="btn btn-warning btn-lg" [disabled]="loading">
+					{{ loading ? 'Cargando...' : 'Registrar' }}
+				</button>
+			</div>
+		</form>
+		<div class="signup-text">
+			<p>¿Ya tienes una cuenta? <a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page">Haz clic aquí para iniciar sesión</a></p>
+		</div>
+	</div>
+</div>
