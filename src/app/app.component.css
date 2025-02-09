@@ -1,4 +1,3 @@
-/* Estilos generales */
 header.navbar {
   background-color: #1a1a1a;
   padding: 10px 0;
@@ -10,9 +9,8 @@ header.navbar {
   z-index: 10;
 }
 
-/* Redefinir el color de énfasis de Bootstrap */
 :root {
-  --bs-emphasis-color-rgb: 76, 175, 80; /* RGB del verde deseado */
+  --bs-emphasis-color-rgb: 76, 175, 80; 
 }
 
 .container {
